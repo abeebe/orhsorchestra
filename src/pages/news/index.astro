@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('news')).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout title="News" description="Latest news from the ORHS Orchestra.">
+  <!-- Page Header -->
+  <section class="bg-navy-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-serif text-4xl font-bold mb-3">News</h1>
+      <p class="text-navy-200 text-lg">Updates from the ORHS Orchestra</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="space-y-6">
+        {posts.map(post => (
+          <a
+            href={`/news/${post.id}`}
+            class="block bg-white border border-navy-200 rounded-xl p-6 hover:shadow-lg hover:border-gold-400 transition-all"
+          >
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+              <h2 class="font-serif text-xl font-bold text-navy-900">{post.data.title}</h2>
+              <time class="text-sm text-navy-400 flex-shrink-0" datetime={post.data.date}>
+                {new Date(post.data.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+            </div>
+            {post.data.description && (
+              <p class="text-navy-600">{post.data.description}</p>
+            )}
+            <span class="text-gold-600 font-medium text-sm mt-3 inline-block">
+              Read more &rarr;
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

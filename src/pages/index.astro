@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <!-- Hero -->
+  <section class="bg-navy-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+      <img
+        src="/images/hero-banner.png"
+        alt="Oak Ridge High School Orchestra"
+        class="mx-auto mb-8 max-w-md w-full"
+      />
+      <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">
+        Oak Ridge High School Orchestra
+      </h1>
+      <p class="text-xl md:text-2xl text-gold-400 font-serif">
+        East Tennessee's Premier High School Orchestra
+      </p>
+    </div>
+  </section>
+
+  <!-- Announcement -->
+  <section class="bg-gold-400 text-navy-900">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+      <p class="font-semibold text-lg">Uniform ordering is now available!</p>
+      <a
+        href="/boosters"
+        class="inline-block bg-navy-900 text-white px-6 py-2 rounded-md font-medium hover:bg-navy-800 transition-colors"
+      >
+        Order Uniforms
+      </a>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl font-bold mb-6">Welcome</h2>
+      <p class="text-lg text-navy-600 leading-relaxed mb-8">
+        The Oak Ridge High School Orchestra program is dedicated to providing quality musical
+        experiences for students. Our program builds musicianship, teamwork, and a lifelong
+        appreciation for the arts.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="/about"
+          class="bg-navy-900 text-white px-6 py-3 rounded-md font-medium hover:bg-navy-800 transition-colors"
+        >
+          Meet Our Directors
+        </a>
+        <a
+          href="/boosters"
+          class="border-2 border-navy-900 text-navy-900 px-6 py-3 rounded-md font-medium hover:bg-navy-50 transition-colors"
+        >
+          Support the Orchestra
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="bg-navy-50 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl font-bold mb-8">Our Sponsors</h2>
+      <img
+        src="/images/sponsors-2025.jpg"
+        alt="2025 Orchestra Sponsors"
+        class="mx-auto max-w-lg w-full rounded-lg shadow-md"
+      />
+      <p class="mt-6 text-navy-600">
+        Interested in sponsoring the ORHS Orchestra?
+        <a href="/contact" class="text-gold-600 font-medium hover:underline">Get in touch</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

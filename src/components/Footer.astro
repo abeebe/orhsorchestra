@@ -1,0 +1,78 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-navy-950 text-navy-300">
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand -->
+      <div>
+        <h3 class="font-serif text-xl text-white mb-2">ORHS Orchestra</h3>
+        <p class="text-sm">East Tennessee's Premier High School Orchestra</p>
+        <p class="text-sm mt-2">
+          Oak Ridge High School<br />
+          1450 Oak Ridge Turnpike<br />
+          Oak Ridge, TN 37830
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about" class="hover:text-gold-400 transition-colors">About</a></li>
+          <li><a href="/boosters" class="hover:text-gold-400 transition-colors">Boosters</a></li>
+          <li><a href="/news" class="hover:text-gold-400 transition-colors">News</a></li>
+          <li><a href="/contact" class="hover:text-gold-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h4 class="font-semibold text-white mb-3">Connect</h4>
+        <div class="flex gap-4">
+          <a
+            href="https://www.facebook.com/ORHSstrings"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-gold-400 transition-colors"
+            aria-label="Facebook"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/ORHSOrchestra"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-gold-400 transition-colors"
+            aria-label="X (Twitter)"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a
+            href="mailto:orhsorcb@gmail.com"
+            class="hover:text-gold-400 transition-colors"
+            aria-label="Email"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm mt-4">
+          <a href="mailto:orhsorcb@gmail.com" class="hover:text-gold-400 transition-colors">
+            orhsorcb@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-navy-800 mt-8 pt-6 text-center text-sm text-navy-400">
+      &copy; {currentYear} ORHS Orchestra Boosters. All rights reserved.
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="Meet the directors of the Oak Ridge High School Orchestra program.">
+  <!-- Page Header -->
+  <section class="bg-navy-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="font-serif text-4xl font-bold mb-3">About Our Program</h1>
+      <p class="text-navy-200 text-lg">Oak Ridge City Schools Orchestra</p>
+    </div>
+  </section>
+
+  <!-- Directors Gallery -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
+        <img
+          src="/images/logo-orig.jpg"
+          alt="ORHS Orchestra"
+          class="rounded-lg shadow-md w-full object-cover aspect-[4/3]"
+        />
+        <img
+          src="/images/director-photo-2.jpg"
+          alt="Orchestra performance"
+          class="rounded-lg shadow-md w-full object-cover aspect-[4/3]"
+        />
+        <img
+          src="/images/director-photo-3.jpg"
+          alt="Orchestra group"
+          class="rounded-lg shadow-md w-full object-cover aspect-[4/3]"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff Bios -->
+  <section class="pb-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-serif text-3xl font-bold mb-10 text-center">Our Directors</h2>
+
+      <!-- Carlos Hernandez -->
+      <div class="bg-navy-50 rounded-xl p-6 md:p-8 mb-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <img
+            src="/images/carlos-hernandez.jpg"
+            alt="Carlos Hernandez"
+            class="w-48 h-auto rounded-lg shadow-md object-cover flex-shrink-0"
+          />
+          <div>
+            <h3 class="font-serif text-2xl font-bold mb-1">Carlos Hernandez</h3>
+            <p class="text-gold-600 font-medium mb-4">Orchestra Director</p>
+            <div class="text-navy-700 space-y-3 leading-relaxed">
+              <p>
+                Mr. Hernandez is originally from Guaynabo, Puerto Rico. He started playing the
+                violin when he was 9 years old. Later, he decided to dedicate himself to music and
+                did his Undergrad, Masters, and Artist Diploma in Violin Performance. Halfway through
+                his Artist Diploma, he discovered that he actually enjoys teaching as much as playing.
+                As such, he went back to school for a second Masters but in Education. He then went
+                on to teach at Dobyns-Bennett High School and Ross N. Robinson right after graduation
+                and now he's joining us here at ORHS.
+              </p>
+              <p>
+                Professionally, he has played with different Orchestras such as Knoxville Symphony
+                Orchestra, Symphony of the Mountains, Johnson City Symphony, among others.
+              </p>
+              <p>
+                Mr. Hernandez comes to us with motivation to continue to build and nurture the
+                Oak Ridge City Schools Orchestra program.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Erin Bray -->
+      <div class="bg-navy-50 rounded-xl p-6 md:p-8">
+        <h3 class="font-serif text-2xl font-bold mb-1">Erin Bray</h3>
+        <p class="text-gold-600 font-medium mb-4">Assistant Director</p>
+        <p class="text-navy-500 italic">Bio coming soon!</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
