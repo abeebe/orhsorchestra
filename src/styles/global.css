@@ -2,17 +2,17 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-navy-50: #f0f4f8;
-  --color-navy-100: #d9e2ec;
-  --color-navy-200: #bcccdc;
-  --color-navy-300: #9fb3c8;
-  --color-navy-400: #829ab1;
-  --color-navy-500: #627d98;
-  --color-navy-600: #486581;
-  --color-navy-700: #334e68;
-  --color-navy-800: #243b53;
-  --color-navy-900: #102a43;
-  --color-navy-950: #0a1929;
+  --color-navy-50: #fdf2f2;
+  --color-navy-100: #f5d5d5;
+  --color-navy-200: #e0a8a8;
+  --color-navy-300: #c47a7a;
+  --color-navy-400: #a35555;
+  --color-navy-500: #843c3c;
+  --color-navy-600: #6b2a2a;
+  --color-navy-700: #551f1f;
+  --color-navy-800: #3d1515;
+  --color-navy-900: #2a0e0e;
+  --color-navy-950: #1a0808;
 
   --color-gold-50: #fefce8;
   --color-gold-100: #fef9c3;
