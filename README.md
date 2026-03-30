@@ -1,43 +1,45 @@
-# Astro Starter Kit: Minimal
+# ORHS Orchestra
 
-```sh
-npm create astro@latest -- --template minimal
+Website for the Oak Ridge High School Orchestra program.
+
+## Stack
+
+- **[Astro](https://astro.build)** — static site generator with SSR support
+- **[@astrojs/netlify](https://docs.astro.build/en/guides/deploy/netlify/)** — Netlify adapter
+- **Google Fonts** — Inter, Playfair Display
+
+## Getting Started
+
+```bash
+npm install
+npm run dev       # dev server → http://localhost:4321
+npm run build     # production build → ./dist
+npm run preview   # preview locally
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Project Structure
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+├── layouts/
+│   └── Layout.astro       # HTML shell, fonts, global styles
+├── pages/
+│   ├── index.astro        # Homepage
+│   └── contact.astro      # Contact form (Netlify Forms)
+└── components/            # Nav, Hero, sections, Footer
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## External Services
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Service | Purpose | Config Location |
+|---------|---------|-----------------|
+| **Netlify** | Hosting + form handling | `.netlify/netlify.toml` · `@astrojs/netlify` adapter |
+| **Netlify Forms** | Contact form submissions | `src/pages/contact.astro` · `data-netlify="true"` |
+| **PayPal** | Donations + uniform purchases | `src/components/` · Hosted button ID: `T32ANDBDFNPHA` |
+| **Google Fonts** | Typography | `src/layouts/Layout.astro` · Inter, Playfair Display |
 
-Any static assets, like images, can be placed in the `public/` directory.
+No analytics or email services configured.
 
-## 🧞 Commands
+## Deployment
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Push to `main` — Netlify auto-builds and deploys.
